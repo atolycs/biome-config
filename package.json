@@ -1,5 +1,5 @@
 {
-  "name": "atolycs-biome-config",
+  "name": "@atolycs/biome-config",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
