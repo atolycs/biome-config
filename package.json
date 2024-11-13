@@ -1,0 +1,19 @@
+{
+  "name": "atolycs-biome-config",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "atolycs",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4"
+  },
+  "type": "module",
+  "exports": {
+    "./biome": "./biome.json"
+  }
+}
