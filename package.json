@@ -8,7 +8,7 @@
   "author": "atolycs",
   "license": "MIT",
   "description": "Atolycs's biome config",
-  "devDependencies": {
+  "dependencies": {
     "@biomejs/biome": "^1.9.4"
   },
   "type": "module",
