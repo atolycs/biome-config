@@ -14,5 +14,8 @@
   "type": "module",
   "exports": {
     ".": "./biome.json"
+  },
+  "scripts": {
+    "postinstall": "node scripts/postinstall.mjs"
   }
 }
