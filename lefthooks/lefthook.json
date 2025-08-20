@@ -4,7 +4,7 @@
     "commands": {
       "format": {
         "glob": "*.{ts,tsx,css}",
-        "run":"npx @biomejs/biome chekc --write {staged_files} && git update-index --again"
+        "run":"npx @biomejs/biome check --write {staged_files} && git update-index --again"
       }
     }
   }

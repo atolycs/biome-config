@@ -3,13 +3,32 @@ import * as path from "path"
 
 const basePath = process.env.INIT_CWD;
 const biomeConfigPath = path.join(basePath, "biome.json")
+const lefthookPath = path.join(basePath, "lefthook.json")
 
-const config_map = {
+
+const biome_config_map = {
   "extends": ["@atolycs/biome-config"]
 }
 
-if (!fs.existsSync(biomeConfigPath)) {
-  fs.writeFileSync(biomeConfigPath, JSON.stringify(config_map, null, 2))
+const lefthook_config_map = {
+  "$schema": "https://json.schemastore.org/lefthook.json",
+  "remotes": [
+    {
+      "git_url": "https://github.com/atolycs/biome-config",
+      "configs": [
+        "lefthooks/lefthook.json"
+      ]
+    }
+  ]
 }
 
+if (!fs.existsSync(biomeConfigPath)) {
+  console.log("==> Installing biome config...")
+  fs.writeFileSync(biomeConfigPath, JSON.stringify(biome_config_map, null, 2))
+}
+
+if (!fs.existsSync(lefthookPath)) {
+  console.log("==> Installing lefthook config...")
+  fs.writeFileSync(lefthookPath, JSON.stringify(lefthook_config_map, null, 2))
+}
 
