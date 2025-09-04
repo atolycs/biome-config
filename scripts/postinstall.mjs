@@ -7,6 +7,7 @@ const lefthookPath = path.join(basePath, "lefthook.json")
 
 
 const biome_config_map = {
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
   "extends": ["@atolycs/biome-config"]
 }
 
