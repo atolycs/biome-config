@@ -17,6 +17,7 @@
     ".": "./biome.json"
   },
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "postinstall": "node scripts/postinstall.mjs"
   }
 }
