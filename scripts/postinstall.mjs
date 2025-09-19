@@ -1,7 +1,7 @@
 import * as fs from "fs"
 import * as path from "path"
 
-const basePath = process.env.INIT_CWD;
+const basePath = process.env.INIT_CWD || process.cwd();
 const biomeConfigPath = path.join(basePath, "biome.json")
 const lefthookPath = path.join(basePath, "lefthook.json")
 

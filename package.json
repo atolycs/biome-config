@@ -12,12 +12,16 @@
     "@biomejs/biome": "^2.2.0",
     "lefthook": "^1.12.3"
   },
+  "peerDependencies": {
+    "@biomejs/biome": "2.2.0",
+    "lefthook": "1.12.3"
+  },
   "type": "module",
   "exports": {
     ".": "./biome.json"
   },
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
+    "prepare": "git init",
     "postinstall": "node scripts/postinstall.mjs"
   }
 }
