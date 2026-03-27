@@ -9,19 +9,15 @@
   "license": "MIT",
   "description": "Atolycs's biome config",
   "dependencies": {
-    "@biomejs/biome": "^2.2.0",
-    "lefthook": "^1.12.3"
-  },
-  "peerDependencies": {
-    "@biomejs/biome": "2.2.0",
-    "lefthook": "1.12.3"
+    "@biomejs/biome": "^2.4.9",
+    "lefthook": "^1.13.6"
   },
   "type": "module",
   "exports": {
     ".": "./biome.json"
   },
   "scripts": {
-    "prepare": "git init",
+    // "prepare": "git init",
     "postinstall": "node scripts/postinstall.mjs"
   }
 }
