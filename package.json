@@ -12,6 +12,10 @@
     "@biomejs/biome": "^2.4.9",
     "lefthook": "^1.13.6"
   },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.9",
+    "lefthook": "^1.13.6"
+  },
   "type": "module",
   "exports": {
     ".": "./biome.json"

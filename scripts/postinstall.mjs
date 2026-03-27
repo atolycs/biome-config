@@ -1,4 +1,4 @@
-import * as fs from "fs"
+import { readFileSync, writeFileSync, existsSync } from "fs"
 import { resolve, dirname, join } from "path"
 import { execSync } from "child_process"
 import { fileURLToPath } from "url";
@@ -32,14 +32,14 @@ const lefthook_config_map = {
   ]
 }
 
-if (!fs.existsSync(biomeConfigPath)) {
+if (!existsSync(biomeConfigPath)) {
   console.log("==> Installing biome config...")
-  fs.writeFileSync(biomeConfigPath, JSON.stringify(biome_config_map, null, 2))
+  writeFileSync(biomeConfigPath, JSON.stringify(biome_config_map, null, 2))
 }
 
-if (!fs.existsSync(lefthookPath)) {
+if (!existsSync(lefthookPath)) {
   console.log("==> Installing lefthook config...")
-  fs.writeFileSync(lefthookPath, JSON.stringify(lefthook_config_map, null, 2))
+  writeFileSync(lefthookPath, JSON.stringify(lefthook_config_map, null, 2))
 }
 
 if (!isPnpm) process.exit(0)
