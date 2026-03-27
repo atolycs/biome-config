@@ -17,7 +17,6 @@
     ".": "./biome.json"
   },
   "scripts": {
-    // "prepare": "git init",
     "postinstall": "node scripts/postinstall.mjs"
   }
 }
