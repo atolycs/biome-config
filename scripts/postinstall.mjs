@@ -46,5 +46,5 @@ if (!isPnpm) process.exit(0)
 
 for (const pkg of packages) {
   console.log(`📦 Hoisting ${pkg} to project root ...`)
-  execSync(`pnpm add ${pkg}`, { cwd: basePath, stdio: 'inherit' })
+  execSync(`pnpm add ${pkg} --ignore-scripts`, { cwd: basePath, stdio: 'inherit' })
 }
